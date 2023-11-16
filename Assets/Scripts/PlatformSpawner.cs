@@ -20,7 +20,7 @@ public class PlatformSpawner : MonoBehaviour
             spawnPosition.x = Random.Range(-levelWidth, levelWidth);
             GameObject platform = Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
 
-            // Add a PlatformMover script to make the platform move
+            
             PlatformMover mover = platform.AddComponent<PlatformMover>();
             mover.range = platformHorizontalMovementRange;
             mover.frequency = platformMovementFrequency;

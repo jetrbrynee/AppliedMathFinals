@@ -13,7 +13,7 @@ public class PlatformMover : MonoBehaviour
 
     void Update()
     {
-        // Move the platform in a wave pattern using Mathf.Cos
+        //Move the platform pattern using Mathf.Cos
         transform.position = startPosition + Vector3.right * Mathf.Cos(Time.time * frequency) * range;
     }
 }
